@@ -1,5 +1,14 @@
 ### Hi there 👋
 
+I'm Mahyar Nemati and this account is a showcase of stuff i like working on.
+
+- 🔭 I’m currently working on completing a #1000daysofcoding Challenge
+- 🌱 I’m currently expanding my knowledge in Web3, Cloud Development, Software Engineering and AI
+- 💬 How to reach me: www.mahyarnemati.com
+- 📫 Email: Mayarnemati@gmail.com
+
+
+
 <!--
 **MahyarNemati/MahyarNemati** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
