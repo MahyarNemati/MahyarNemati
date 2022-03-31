@@ -3,10 +3,10 @@
 <hr />
 
 <a href="https://www.linkedin.com/in/mahyarnemati/">
-  <img align="left" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"  />
+  <img align="left" width="24px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"  />
 </a>
 <a href="mailto:mayarnemati@gmail.com">
-  <img align="left" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />
+  <img align="left" width="26px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg" />
 </a>
 
 <br/>
