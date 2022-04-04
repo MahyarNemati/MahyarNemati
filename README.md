@@ -1,4 +1,4 @@
-### Hi there! I'm Mahyar Nemati, welcome to my GitHub. 🌱
+### Hi there! I'm Mahyar Nemati, welcome to my GitHub. 💻
 
 <hr />
 
