@@ -13,9 +13,9 @@
 
 ### About Me 🚀
 💻 I’m a **Full-stack developer** with a bachelor's degree in Computer Engineering. </br> </br>
-👨🏼‍💻 Currently i am expanding my knowledge in the **Web3** and **advisor** fields and who loves providing mentorship. </br></br>
-💬 Feel more than welcome to contact me if you need any help or want to discuss any software development topic! </br></br>
-   
+🌐 Currently, I am dedicated to expanding my expertise in the exciting domains of Web3 technology and advisory roles. I am passionate about providing mentorship and guidance to those who seek it. </br></br>
+💬 💬 Please feel free to reach out to me if you require assistance or wish to engage in discussions on various software development topics. I'm here to help!</br></br>
+
  <b><i>I truly believe that technology and software development has the power to change people's lives for the better. 
     
 <br/>
