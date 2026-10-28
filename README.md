@@ -31,9 +31,9 @@ open_to:  Senior Full-Stack · Platform · Solution Architect roles
 const engineer = {
   ships:     "small, typed, tested, observable",
   designs:   "for failure, scale and the 3am pager",
-  secures:   "by default — not as a sprint ticket",
-  measures:  "p99 latency, not vibes",
-  documents: "decisions (ADRs), not just code",
+  secures:   "by default, from day one",
+  measures:  "p99 latency and real user impact",
+  documents: "every key decision in an ADR",
 };
 ```
 
@@ -42,16 +42,16 @@ const engineer = {
 | Domain | What I actually ship |
 |:--|:--|
 | **System Design** | Multi-tenant SaaS, event sourcing & CQRS, caching strategies, queues, sharding, back-pressure |
-| **Backend & APIs** | Go, Python/Flask, Node/Express, Java/Spring — REST, gRPC, GraphQL, WebSockets |
-| **Frontend** | React, Next.js, TypeScript, Tailwind — fast, typed, accessible, edge-rendered UIs |
+| **Backend & APIs** | Go, Python/Flask, Node/Express, Java/Spring · REST, gRPC, GraphQL, WebSockets |
+| **Frontend** | React, Next.js, TypeScript, Tailwind · fast, typed, accessible, edge rendered UIs |
 | **Platform & DevOps** | Docker, Kubernetes, Helm, Terraform, ArgoCD (GitOps), GitHub Actions |
-| **Cloud** | Azure, AWS, GCP, Cloudflare Workers — serverless & edge |
+| **Cloud** | Azure, AWS, GCP, Cloudflare Workers · serverless & edge |
 | **Security Eng.** | OAuth2 / OIDC, Okta, passkeys (WebAuthn), RBAC/ABAC, secrets mgmt, SBOM & signing |
-| **Data** | PostgreSQL, Redis, Kafka, ClickHouse — schema design, indexing, query tuning |
-| **Reliability** | OpenTelemetry, Prometheus, Grafana — SLOs, load testing (k6), chaos & incident response |
+| **Data** | PostgreSQL, Redis, Kafka, ClickHouse · schema design, indexing, query tuning |
+| **Reliability** | OpenTelemetry, Prometheus, Grafana · SLOs, load testing (k6), chaos & incident response |
 
 <details>
-<summary><b><code>> cat ~/designs/saas.arch</code></b> &nbsp;— how I architect a multi-tenant platform <i>(click to expand)</i></summary>
+<summary><b><code>> cat ~/designs/saas.arch</code></b> &nbsp;how I architect a multi-tenant platform <i>(click to expand)</i></summary>
 <br/>
 
 ```text
@@ -76,7 +76,7 @@ const engineer = {
 </details>
 
 <details>
-<summary><b><code>> sudo ./security --audit</code></b> &nbsp;— my security baseline on every project <i>(click to expand)</i></summary>
+<summary><b><code>> sudo ./security --audit</code></b> &nbsp;my security baseline on every project <i>(click to expand)</i></summary>
 <br/>
 
 ```diff
@@ -100,7 +100,7 @@ const engineer = {
 </details>
 
 <details>
-<summary><b><code>> cat ~/.radar/2026.md</code></b> &nbsp;— tech I'm adopting, trialing & watching <i>(click to expand)</i></summary>
+<summary><b><code>> cat ~/.radar/2026.md</code></b> &nbsp;tech I'm adopting, trialing & watching <i>(click to expand)</i></summary>
 <br/>
 
 | ring | tech |
@@ -115,9 +115,9 @@ const engineer = {
 
 | Project | Stack | What it does |
 |:--|:--|:--|
-| [**Tweepy-Project**](https://github.com/MahyarNemati/Tweepy-Project) | `Python` `Data Pipelines` | Built for Ontario's Ministry of Transportation — fuses multi-source data to predict highway accidents and alert operators in time to act |
+| [**Tweepy-Project**](https://github.com/MahyarNemati/Tweepy-Project) | `Python` `Data Pipelines` | Built for Ontario's Ministry of Transportation. Fuses data from many sources to predict highway accidents and alert operators in time to act |
 | [**OLE**](https://github.com/MahyarNemati/OLE) | `Java` `Blockchain` `Crypto` | Custom blockchain + encrypted mobile e-wallet with privacy-preserving transactions |
-| [**job-application-dashboard**](https://github.com/MahyarNemati/job-application-dashboard) | `TypeScript` `Automation` | JobHunter — upload a resume, auto-discover & apply to jobs across LinkedIn, Indeed, Glassdoor |
+| [**job-application-dashboard**](https://github.com/MahyarNemati/job-application-dashboard) | `TypeScript` `Automation` | JobHunter: upload a resume, auto discover & apply to jobs across LinkedIn, Indeed, Glassdoor |
 | [**chatapp**](https://github.com/MahyarNemati/chatapp) | `Node` `Socket.io` | Real-time chat rooms over WebSockets |
 | [**receipt-app**](https://github.com/MahyarNemati/receipt-app) | `Parsing` `Automation` | POS receipts → email → parsed → tax-year expense report, zero manual entry |
 | [**BoltFare**](https://github.com/MahyarNemati/BoltFare) | `Solidity` | Web3 smart-contract project |
@@ -125,7 +125,7 @@ const engineer = {
 ### `> git log --oneline -now`
 
 ```diff
-+ building   zero-trust auth gateway — OIDC + passkeys, written in Go
++ building   zero trust auth gateway in Go with OIDC + passkeys
 + shipping   GitOps homelab: k3s · ArgoCD · Terraform · sealed secrets
 + hardening  CI supply chain: SBOMs, signed images, provenance
 + studying   distributed consensus (Raft) & offensive security
@@ -152,7 +152,7 @@ const engineer = {
 </picture>
 
 ```
-> echo "Have a hard problem? Let's architect it — securely."  ▍
+> echo "Have a hard problem? Let's architect it securely."  ▍
 ```
 
 </div>
