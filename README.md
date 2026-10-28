@@ -66,12 +66,6 @@ open_to:  Senior Full-Stack · Solution Architect roles
   <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,azure,aws,docker,githubactions,linux,bash,git,vercel,vscode&perline=13&theme=dark" />
 </p>
 
-### `> activity --graph`
-
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=MahyarNemati&bg_color=0d1117&color=00FF9C&line=00FF9C&point=ffffff&area=true&area_color=00FF9C&hide_border=true&custom_title=commit%20activity" />
-</p>
-
 <div align="center">
 
 ```
