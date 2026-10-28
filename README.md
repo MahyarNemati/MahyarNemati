@@ -1,11 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2600&pause=800&color=00FF9C&center=true&vCenter=true&width=720&height=60&lines=%24+whoami+%E2%86%92+Mahyar+Nemati;Solution+Architect+%2F%2F+Full-Stack+Engineer;Building+AI-native+SaaS+on+the+cloud;Python+%C2%B7+TypeScript+%C2%B7+Azure+%C2%B7+LLMs" alt="Mahyar Nemati" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2800&pause=900&color=B4A7E6&center=true&vCenter=true&width=720&height=60&lines=%24+whoami+%E2%86%92+Mahyar+Nemati;Solution+Architect+%2F%2F+Full-Stack+Engineer;Secure+by+design.+Built+to+scale.;AI-native+SaaS+%C2%B7+Cloud+%C2%B7+Zero-Trust+Auth" alt="Mahyar Nemati" />
 
-<a href="https://mnmti.com"><img src="https://img.shields.io/badge/mnmti.com-0d1117?style=for-the-badge&logo=googlechrome&logoColor=00FF9C" /></a>
-<a href="https://www.linkedin.com/in/mahyarnemati"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=00FF9C" /></a>
-<img src="https://img.shields.io/badge/Toronto,_ON-0d1117?style=for-the-badge&logo=googlemaps&logoColor=00FF9C" />
-<img src="https://komarev.com/ghpvc/?username=MahyarNemati&style=for-the-badge&color=0d1117&label=PROFILE+VIEWS" />
+<a href="https://mnmti.com"><img src="https://img.shields.io/badge/mnmti.com-1a1b26?style=for-the-badge&logo=googlechrome&logoColor=9ECEC0" /></a>
+<a href="https://www.linkedin.com/in/mahyarnemati"><img src="https://img.shields.io/badge/LinkedIn-1a1b26?style=for-the-badge&logo=linkedin&logoColor=A9C1E8" /></a>
+<img src="https://img.shields.io/badge/Toronto,_ON-1a1b26?style=for-the-badge&logo=googlemaps&logoColor=E6B8C8" />
 
 </div>
 
@@ -18,30 +17,81 @@ base:     Toronto, ON
 exp:      5+ yrs shipping production web & cloud systems
 degree:   B.Eng. Computer Engineering
 focus:
-  - AI-native SaaS       # multi-tenant platforms on Claude / LLM APIs
-  - Cloud architecture   # Azure, AWS, Docker, CI/CD
-  - Identity & security  # Okta, OAuth2/OIDC, SSO, tenant isolation
+  - AI-native SaaS       # multi-tenant platforms on LLM APIs
+  - Cloud architecture   # Azure, AWS, Kubernetes, IaC
+  - Identity & security  # Okta, OAuth2/OIDC, SSO, zero-trust
   - Developer tooling    # MCP servers, browser automation, agents
 open_to:  Senior Full-Stack · Solution Architect roles
+```
+
+```ts
+const engineer = {
+  ships:     "small, typed, tested, observable",
+  designs:   "for failure, scale and the 3am pager",
+  secures:   "by default — not as a sprint ticket",
+  documents: "decisions (ADRs), not just code",
+};
 ```
 
 ### `> ./expertise --verbose`
 
 | Domain | What I actually ship |
 |:--|:--|
-| **Backend & APIs** | Python/Flask, Node/Express, Java/Spring, GraphQL (Hasura), clean REST design |
-| **Frontend** | React, Next.js, TypeScript, Tailwind — fast, typed, component-driven UIs |
-| **Cloud & DevOps** | Azure, AWS, Docker, CI/CD — infra built for multi-tenant scale |
-| **Auth & Security** | Okta, OAuth2 / OIDC, SSO, RBAC, per-tenant data isolation |
-| **AI Engineering** | LLM integration (Claude API), MCP servers, agent tooling, automation pipelines |
-| **Data** | PostgreSQL, MySQL, Redis, schema design & query tuning |
-| **Web3** | Solidity smart contracts |
+| **System Design** | Multi-tenant architecture, event-driven systems, caching, queues, horizontal scaling |
+| **Backend & APIs** | Python/Flask, Node/Express, Go, Java/Spring, GraphQL, gRPC, REST contracts |
+| **Frontend** | React, Next.js, TypeScript, Tailwind — fast, typed, accessible UIs |
+| **Cloud & DevOps** | Azure, AWS, Docker, Kubernetes, Terraform, GitHub Actions CI/CD |
+| **Auth & Security** | Okta, OAuth2 / OIDC, SSO, RBAC, row-level tenant isolation, secrets management |
+| **AI Engineering** | LLM integration (Claude API), MCP servers, RAG, agent tooling, automation |
+| **Data** | PostgreSQL, Redis, Kafka, schema design, indexing & query tuning |
+| **Reliability** | Observability (Prometheus, Grafana), testing pyramids, SLOs, incident response |
+
+### `> cat ~/designs/saas.arch`
+
+```text
+                  ┌─────────────── edge ────────────────┐
+   client  ──▶    │   CDN · WAF · TLS · rate limiting   │
+                  └──────────────────┬──────────────────┘
+                                     ▼
+          ┌──────────── API gateway (OIDC / Okta) ─────────────┐
+          │    tenant resolver  →  RBAC  →  request context    │
+          └───────┬──────────────────┬──────────────────┬──────┘
+                  ▼                  ▼                  ▼
+            core services      AI orchestrator     async workers
+            Flask · Node       LLM + MCP tools     queue · Redis
+                  └──────────────────┼──────────────────┘
+                                     ▼
+              Postgres (RLS per tenant) · Redis · object storage
+                                     ▼
+               logs · traces · metrics · alerts  →  on-call
+```
+
+### `> sudo ./security --audit`
+
+```diff
++ [✓] OWASP Top 10 / ASVS-driven code review
++ [✓] Threat modeling (STRIDE) before the first commit
++ [✓] Zero-trust auth: OIDC, short-lived tokens, MFA, least privilege
++ [✓] Secrets in vaults, never in repos · dependency & SBOM scanning
++ [✓] Tenant isolation: RLS, scoped API keys, audit trails
+- [✗] "we'll add security later"
+```
+
+<p>
+<img src="https://img.shields.io/badge/OWASP-1a1b26?style=flat-square&logo=owasp&logoColor=B4A7E6" />
+<img src="https://img.shields.io/badge/Burp_Suite-1a1b26?style=flat-square&logo=burpsuite&logoColor=E6B8C8" />
+<img src="https://img.shields.io/badge/Wireshark-1a1b26?style=flat-square&logo=wireshark&logoColor=A9C1E8" />
+<img src="https://img.shields.io/badge/Kali_Linux-1a1b26?style=flat-square&logo=kalilinux&logoColor=9ECEC0" />
+<img src="https://img.shields.io/badge/Vault-1a1b26?style=flat-square&logo=vault&logoColor=E8D4A2" />
+<img src="https://img.shields.io/badge/Okta-1a1b26?style=flat-square&logo=okta&logoColor=A9C1E8" />
+<img src="https://img.shields.io/badge/Snyk-1a1b26?style=flat-square&logo=snyk&logoColor=B4A7E6" />
+<img src="https://img.shields.io/badge/Let's_Encrypt-1a1b26?style=flat-square&logo=letsencrypt&logoColor=9ECEC0" />
+</p>
 
 ### `> ls ~/projects --featured`
 
 | Project | Stack | What it does |
 |:--|:--|:--|
-| [**RebuiltHQ**](https://github.com/MahyarNemati/rebuilthq) | `TypeScript` `Claude API` | Multi-tenant AI integration platform powered by Claude |
 | [**cdp-extended-mcp**](https://github.com/MahyarNemati/cdp-extended-mcp) | `TypeScript` `MCP` `CDP` | MCP server for Chrome DevTools Protocol — fetch interception, device emulation, a11y audits, perf profiling |
 | [**job-application-dashboard**](https://github.com/MahyarNemati/job-application-dashboard) | `TypeScript` `Automation` | JobHunter — upload a resume, auto-discover & apply to jobs across LinkedIn, Indeed, Glassdoor |
 | [**Tweepy-Project**](https://github.com/MahyarNemati/Tweepy-Project) | `Python` `ML` | Built for Ontario's Ministry of Transportation — predicts highway accidents from multi-source data and alerts operators |
@@ -51,25 +101,28 @@ open_to:  Senior Full-Stack · Solution Architect roles
 ### `> git log --oneline -now`
 
 ```diff
-+ building   RebuiltHQ — multi-tenant AI platform on Claude
++ building   multi-tenant AI platforms on LLM APIs
 + shipping   MCP servers that give AI agents real browser superpowers
 + hardening  auth flows: Okta / OIDC / SSO across tenants
-+ studying   distributed systems & applied security
++ studying   distributed systems & offensive security
 - tolerating untyped JS, flaky tests, "works on my machine"
 ```
 
 ### `> stack --all`
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,py,java,solidity,react,nextjs,tailwind,nodejs,express,flask,spring,graphql&perline=13&theme=dark" />
-  <br/>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,azure,aws,docker,githubactions,linux,bash,git,vercel,vscode&perline=13&theme=dark" />
-</p>
+| layer | tools |
+|:--|:--|
+| **lang** | <img src="https://skillicons.dev/icons?i=ts,js,py,go,rust,java,solidity&theme=dark" height="36" /> |
+| **front** | <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vitest&theme=dark" height="36" /> |
+| **back** | <img src="https://skillicons.dev/icons?i=nodejs,express,flask,spring,graphql,kafka,rabbitmq&theme=dark" height="36" /> |
+| **data** | <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,supabase&theme=dark" height="36" /> |
+| **cloud** | <img src="https://skillicons.dev/icons?i=azure,aws,gcp,cloudflare,docker,kubernetes,terraform,githubactions,nginx&theme=dark" height="36" /> |
+| **ops** | <img src="https://skillicons.dev/icons?i=prometheus,grafana,jest,selenium,linux,kali,bash,git&theme=dark" height="36" /> |
 
 <div align="center">
 
 ```
-> echo "Have a hard problem? Let's architect it."  ▍
+> echo "Have a hard problem? Let's architect it — securely."  ▍
 ```
 
 </div>
